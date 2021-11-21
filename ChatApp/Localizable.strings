@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  ChatApp
+
+  Created by Gautam Singh on 22/11/21.
+  
+*/
+"Login_Text_Field_Placeholder" = "Username";
+"Password_Text_Field_Placeholder" = "Password";
+"UserId_Text_Field_Placeholder" = "User ID";
+"Login_Button_Title" = "Login";
+"Button_Logout_Title" = "Logout";
+"Information_Title" = "Information";
+"Add_User_Button_Title" = "Add User";
+"Save_Button_Title" = "Save User";
+"User_Add_Success_Title" = "Congratulations";
+"Warning_Title" = "Warning";
+"Button_OK_Title" = "OK";
+"Button_Cancel_Title" = "Cancel";
+"Information_Error_Title" = "Error!";
+"UserName_Empty" = "Username is empty";
+"UserID_Empty" = "UserID is empty";
+"Password_Empty" = "Password is empty";
