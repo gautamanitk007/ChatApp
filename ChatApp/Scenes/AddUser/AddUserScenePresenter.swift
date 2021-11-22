@@ -15,8 +15,8 @@ final class AddUserScenePresenter {
 
 // MARK: - AddUserScenePresenterInput
 extension AddUserScenePresenter: AddUserScenePresenterInput{
-    func userSuccess(message: String) {
-        self.viewController?.userAddSuccess(message: message)
+    func userSuccess(model: UserModel) {
+        self.viewController?.userAddSuccess(model:model)
     }
     func userFailed(message: String) {
         self.viewController?.userAddFailed(message: message)

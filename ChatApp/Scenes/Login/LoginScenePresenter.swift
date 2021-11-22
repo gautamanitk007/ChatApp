@@ -17,8 +17,8 @@ final class LoginScenePresenter {
 
 // MARK: - LoginScenePresentationLogic
 extension LoginScenePresenter: LoginScenePresenterInput{
-    func logingSuccess() {
-        self.viewController?.loginSuccess()
+    func logingSuccess(user: User) {
+        self.viewController?.loginSuccess(user: user)
     }
     
     func logingFailed(message: String) {

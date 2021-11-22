@@ -7,7 +7,7 @@
 
 import Foundation
 protocol DashboardSceneConfigurator {
-    func configured(_ vc: DashboardSceneViewController, coordinator:Coordinator) -> DashboardSceneViewController
+    func configured(_ vc: DashboardSceneViewController, coordinator:Coordinator, user: User) -> DashboardSceneViewController
 }
 
 final class DefaultDashboardSceneConfigurator: DashboardSceneConfigurator {
@@ -18,8 +18,9 @@ final class DefaultDashboardSceneConfigurator: DashboardSceneConfigurator {
     }
     
     @discardableResult
-    func configured(_ vc: DashboardSceneViewController, coordinator:Coordinator) -> DashboardSceneViewController{
+    func configured(_ vc: DashboardSceneViewController, coordinator:Coordinator, user: User) -> DashboardSceneViewController {
         sceneFactory.dashboardConfigurator = self
+        print(user)
         return vc
     }
 }

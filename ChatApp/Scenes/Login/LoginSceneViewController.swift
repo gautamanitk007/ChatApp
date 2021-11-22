@@ -7,7 +7,7 @@
 //
 import UIKit
 protocol LoginSceneViewControllerInput: AnyObject {
-    func loginSuccess()
+    func loginSuccess(user: User)
     func loginFailed(message: String)
 }
 
@@ -45,28 +45,28 @@ final class LoginSceneViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
+        self.populate()
     }
     @IBAction func didLoginTapped(_ sender: Any) {
         self.view.endEditing(true)
-        self.userModel?.username = "sss"
-        self.userModel?.password = "ssss"
         interactor.startLogin(user: self.userModel!)
     }
     @IBAction func didAddUserTapped(_ sender: Any) {
-        self.router.loadAddUserPage()
+        self.router.showAddUserPage()
     }
 }
 
 
 // MARK: - LoginSceneViewControllerInput
 extension LoginSceneViewController: LoginSceneViewControllerInput {
-    func loginSuccess() {
-        self.router.showLoginSuccess()
+    func loginSuccess(user: User) {
+        self.router.showLoginSuccess(user: user)
     }
     func loginFailed(message: String) {
         self.router.showFailure(message: message)
     }
 }
+
 // MARK: - Private
 private extension LoginSceneViewController {
     func setup() {
@@ -76,6 +76,13 @@ private extension LoginSceneViewController {
         self.txtPassword.placeholder = Utils.getLocalisedValue(key:"Password_Text_Field_Placeholder")
         self.btnLogin.setTitle(Utils.getLocalisedValue(key:"Login_Button_Title"), for: .normal)
         self.btnAddUser.setTitle(Utils.getLocalisedValue(key:"Add_User_Button_Title"), for: .normal)
+    }
+    
+    func populate(){
+        self.txtUserId.text = self.userModel?.userId
+        self.txtPassword.text = self.userModel?.password
+        self.txtUserId.textFieldChange(self.txtUserId)
+        self.txtPassword.textFieldChange(self.txtPassword)
     }
 }
 

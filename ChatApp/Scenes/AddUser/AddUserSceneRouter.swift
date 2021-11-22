@@ -9,7 +9,7 @@ import UIKit
 
 
 protocol AddUserSceneRouting:UserError {
-    func showUserSuccess(message:String)
+    func popController(userModel:UserModel)
 }
 
 final class AddUserSceneRouter {
@@ -23,12 +23,20 @@ final class AddUserSceneRouter {
 }
 
 extension AddUserSceneRouter: AddUserSceneRouting {
-    func showUserSuccess(message: String) {
-        
-    }
-    
+
     func showFailure(message: String) {
         let alertController = Utils.getAlert(title:Utils.getLocalisedValue(key:"Information_Error_Title"),message:message)
         source?.present(alertController, animated: true)
+    }
+    func popController(userModel: UserModel) {
+        if let controllers = source?.navigationController?.viewControllers {
+            for controller in controllers  {
+                if controller.isKind(of: LoginSceneViewController.self){
+                    (controller as! LoginSceneViewController).userModel = userModel
+                    break
+                }
+            }
+        }
+        source?.navigationController?.popViewController(animated: true)
     }
 }

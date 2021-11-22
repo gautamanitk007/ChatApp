@@ -11,7 +11,7 @@ protocol AddUserSceneConfigurator {
 }
 
 final class DefaultAddUserSceneConfigurator: AddUserSceneConfigurator {
-
+    
     private var sceneFactory: SceneFactory
     
     init(sceneFactory: SceneFactory) {

@@ -19,10 +19,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="NOX-jk-QXJ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0L-Qb-yvh" customClass="RoundedView" customModule="TransactionApp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0L-Qb-yvh" customClass="RoundedView" customModule="ChatApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="348" width="374" height="200"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#user Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UK1-zB-zS9" customClass="BindingTextField" customModule="TransactionApp" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#user Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UK1-zB-zS9" customClass="BindingTextField" customModule="ChatApp" customModuleProvider="target">
                                         <rect key="frame" x="8" y="8" width="358" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="NJK-65-bx1"/>
@@ -30,7 +30,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="boR-hT-UeD" customClass="BindingTextField" customModule="TransactionApp" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="boR-hT-UeD" customClass="BindingTextField" customModule="ChatApp" customModuleProvider="target">
                                         <rect key="frame" x="8" y="56" width="358" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="arJ-04-8qt"/>
@@ -38,7 +38,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI6-AI-0Kf" customClass="RoundedButton" customModule="TransactionApp" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI6-AI-0Kf" customClass="RoundedButton" customModule="ChatApp" customModuleProvider="target">
                                         <rect key="frame" x="8" y="104" width="358" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -95,6 +95,7 @@
                     <connections>
                         <outlet property="btnAddUser" destination="Oly-MQ-g07" id="gAF-qY-vhx"/>
                         <outlet property="btnLogin" destination="ZI6-AI-0Kf" id="26D-NA-Kib"/>
+                        <outlet property="containerView" destination="s0L-Qb-yvh" id="9pS-XI-e6c"/>
                         <outlet property="txtPassword" destination="boR-hT-UeD" id="2zX-XF-BfB"/>
                         <outlet property="txtUserId" destination="UK1-zB-zS9" id="eVe-eX-r6q"/>
                     </connections>
@@ -120,7 +121,7 @@
                                             <constraint firstAttribute="height" constant="40" id="wdZ-w1-c48"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#user name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jAQ-rC-tep" customClass="BindingTextField" customModule="ChatApp" customModuleProvider="target">
                                         <rect key="frame" x="8" y="56" width="358" height="40"/>
@@ -128,7 +129,7 @@
                                             <constraint firstAttribute="height" constant="40" id="ozE-cv-ygO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5r-ow-YfE" customClass="BindingTextField" customModule="ChatApp" customModuleProvider="target">
                                         <rect key="frame" x="8" y="104" width="358" height="40"/>
@@ -136,7 +137,7 @@
                                             <constraint firstAttribute="height" constant="40" id="gFv-uH-GdW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZl-kD-IG9" customClass="RoundedButton" customModule="ChatApp" customModuleProvider="target">
                                         <rect key="frame" x="8" y="152" width="358" height="40"/>

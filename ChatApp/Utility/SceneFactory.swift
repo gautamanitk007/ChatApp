@@ -13,7 +13,7 @@ protocol SceneFactory {
     var dashboardConfigurator: DashboardSceneConfigurator! { get set }
     func makeLoginScene(coordinator: Coordinator) -> LoginSceneViewController
     func makeAddUserScene(coordinator: Coordinator) -> AddUserSceneViewController
-    func makeDashboardScene(coordinator: Coordinator) -> DashboardSceneViewController
+    func makeDashboardScene(coordinator: Coordinator, user: User) -> DashboardSceneViewController
 }
 
 final class DefaultSceneFactory: SceneFactory {
@@ -29,9 +29,9 @@ final class DefaultSceneFactory: SceneFactory {
         return addUserConfigurator.configured(addUserVC, coordinator: coordinator)
     }
     
-    func makeDashboardScene(coordinator: Coordinator) -> DashboardSceneViewController {
+    func makeDashboardScene(coordinator: Coordinator, user: User) -> DashboardSceneViewController {
         let dashboardVC = self.getViewController(identifier: "DashboardScene") as! DashboardSceneViewController
-        return dashboardConfigurator.configured(dashboardVC, coordinator: coordinator)
+        return dashboardConfigurator.configured(dashboardVC, coordinator: coordinator, user: user)
     }
 }
 

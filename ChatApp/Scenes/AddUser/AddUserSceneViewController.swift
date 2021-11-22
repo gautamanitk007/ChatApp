@@ -7,7 +7,7 @@
 
 import UIKit
 protocol AddUserSceneViewControllerInput: AnyObject {
-    func userAddSuccess(message: String)
+    func userAddSuccess(model: UserModel)
     func userAddFailed(message: String)
 }
 
@@ -20,7 +20,6 @@ final class AddUserSceneViewController: BaseViewController {
     var interactor: AddUserSceneInteractorInput!
     var router: AddUserSceneRouting!
     var userModel: UserModel?
-
     @IBOutlet weak var containerView: RoundedView!
     
     @IBOutlet weak var txtPassword: BindingTextField!{
@@ -53,7 +52,6 @@ final class AddUserSceneViewController: BaseViewController {
     }
     @IBAction func didSaveTapped(_ sender: Any) {
         self.view.endEditing(true)
-        self.startActivity()
         interactor.addUser(userModel: self.userModel!)
     }
     
@@ -62,13 +60,11 @@ final class AddUserSceneViewController: BaseViewController {
 
 // MARK: - AddUserSceneViewControllerInput
 extension AddUserSceneViewController: AddUserSceneViewControllerInput {
-    func userAddSuccess(message: String) {
-        self.stopActivity()
-        self.router.showUserSuccess(message: message)
+    func userAddSuccess(model: UserModel) {
+        self.router.popController(userModel: model)
     }
     
     func userAddFailed(message: String) {
-        self.stopActivity()
         self.router.showFailure(message: message)
     }
 }

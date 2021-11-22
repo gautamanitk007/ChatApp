@@ -5,10 +5,12 @@
 //  Created by Gautam Singh on 20/11/21.
 //  Copyright (c) 2021 ___ORGANIZATIONNAME___. All rights reserved.
 
+import CoreData
+
 typealias LoginSceneInteractorInput = LoginSceneViewControllerOutput
 
 protocol LoginSceneInteractorOutput:AnyObject {
-    func logingSuccess()
+    func logingSuccess(user: User)
     func logingFailed(message: String)
 }
 
@@ -30,8 +32,15 @@ extension LoginSceneInteractor: LoginSceneInteractorInput {
             self.presenter?.logingFailed(message:Utils.getLocalisedValue(key:"Password_Empty"))
             return
         }
-        
-        self.presenter?.logingSuccess()
-        
+        if let viewContext = self.coordinator?.viewContext {
+            let predicate = NSPredicate(format: "%K == %@ && %K == %@", #keyPath(User.userId),userModel.userId!,#keyPath(User.password),userModel.password!)
+            if let user = User.findOrFetch(in: viewContext, matching: predicate){
+                self.presenter?.logingSuccess(user: user)
+            } else {
+                self.presenter?.logingFailed(message: Utils.getLocalisedValue(key:"User_Password_Wrong"))
+            }
+        } else {
+            self.presenter?.logingFailed(message: Utils.getLocalisedValue(key:"ContextError"))
+        }
     }
 }

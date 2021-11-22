@@ -13,8 +13,8 @@ protocol UserError {
 }
 
 protocol LoginSceneRouting:UserError {
-    func showLoginSuccess()
-    func loadAddUserPage()
+    func showLoginSuccess(user:User)
+    func showAddUserPage()
     func userAddSuccess(message:String)
 }
 
@@ -35,13 +35,13 @@ extension LoginSceneRouter: LoginSceneRouting {
         source?.present(alertController, animated: true)
     }
     
-    func showLoginSuccess() {
+    func showLoginSuccess(user: User) {
         let sceneFactory = DefaultSceneFactory()
         sceneFactory.dashboardConfigurator = DefaultDashboardSceneConfigurator(sceneFactory: sceneFactory)
-        let scene = sceneFactory.makeDashboardScene(coordinator: self.coordinator)
+        let scene = sceneFactory.makeDashboardScene(coordinator: self.coordinator,user: user)
         source?.navigationController?.pushViewController(scene, animated: true)
     }
-    func loadAddUserPage() {
+    func showAddUserPage() {
         let sceneFactory = DefaultSceneFactory()
         sceneFactory.addUserConfigurator = DefaultAddUserSceneConfigurator(sceneFactory: sceneFactory)
         let scene = sceneFactory.makeAddUserScene(coordinator: self.coordinator)

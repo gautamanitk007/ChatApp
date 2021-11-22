@@ -11,11 +11,11 @@ import CoreData
 
 @objc(User)
 public class User: NSManagedObject {
-    static func insert(into mContext: NSManagedObjectContext, name: String,userId:String, password: String) -> User {
+    static func insert(into mContext: NSManagedObjectContext, model:UserModel) -> User {
         let user : User = mContext.insertObject()
-        user.userId = userId
-        user.password = password
-        user.name = name
+        user.userId = model.userId
+        user.password = model.password
+        user.name = model.username
         user.loginId = Date().convertToString()
         return user
     }

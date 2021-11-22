@@ -21,3 +21,7 @@
 "UserName_Empty" = "Username is empty";
 "UserID_Empty" = "UserID is empty";
 "Password_Empty" = "Password is empty";
+"ContextError" = "Failed to initialise managed object context";
+"User_Added" = "User inserted successfully";
+"User_Exist" = "User: %@ already exist";
+"User_Password_Wrong" = "Invalid credentials";
