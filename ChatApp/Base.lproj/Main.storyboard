@@ -102,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-262.31884057971018" y="59.598214285714285"/>
+            <point key="canvasLocation" x="-417" y="70"/>
         </scene>
         <!--Add User Scene View Controller-->
         <scene sceneID="Bs2-j9-QRV">
@@ -189,54 +189,54 @@
             <point key="canvasLocation" x="500" y="60"/>
         </scene>
         <!--Item 2-->
-        <scene sceneID="j1i-kZ-VWk">
+        <scene sceneID="jpF-Sx-Zsz">
             <objects>
-                <viewController id="VR5-ak-S1R" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QMw-v8-DJl">
+                <viewController storyboardIdentifier="FriendScene" id="s6C-Nk-fG1" customClass="FriendsSceneViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DiP-O7-4Ah">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="0aO-AP-hR2"/>
+                        <viewLayoutGuide key="safeArea" id="KSi-6w-Jg6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="vTf-J6-jcj"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="XFU-tl-1xX"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CK4-wK-RSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZV-PQ-JI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2920" y="366"/>
+            <point key="canvasLocation" x="2914" y="232"/>
         </scene>
         <!--Item 1-->
-        <scene sceneID="57Z-97-i6Y">
+        <scene sceneID="FOv-Gh-deE">
             <objects>
-                <viewController id="7Vw-Js-TAj" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qks-0j-61i">
+                <viewController storyboardIdentifier="ContactScene" id="0kQ-Kl-dzE" customClass="ContactSceneViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="soY-3J-5M6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="sID-hB-sZe"/>
+                        <viewLayoutGuide key="safeArea" id="OA8-2i-i0e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Oso-XE-wBC"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="ECd-u4-YWC"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mPA-Nh-sGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v64-7p-Lfx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2920" y="-239"/>
+            <point key="canvasLocation" x="2914" y="-376"/>
         </scene>
         <!--Dashboard Scene View Controller-->
-        <scene sceneID="ewz-Gl-vC4">
+        <scene sceneID="cND-w1-f9C">
             <objects>
-                <tabBarController storyboardIdentifier="DashboardScene" id="CHa-eE-ZIV" customClass="DashboardSceneViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cow-oa-aht">
+                <tabBarController storyboardIdentifier="DashboardScene" id="KLI-IV-hQ6" customClass="DashboardSceneViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xmZ-9y-Oik">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="7Vw-Js-TAj" kind="relationship" relationship="viewControllers" id="RVo-8h-SdH"/>
-                        <segue destination="VR5-ak-S1R" kind="relationship" relationship="viewControllers" id="xgt-c7-j3i"/>
+                        <segue destination="0kQ-Kl-dzE" kind="relationship" relationship="viewControllers" id="S91-z3-OAQ"/>
+                        <segue destination="s6C-Nk-fG1" kind="relationship" relationship="viewControllers" id="uEA-mE-vLu"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lxV-hk-y0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ol6-Lm-2l3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1417" y="6"/>
+            <point key="canvasLocation" x="1420" y="-95"/>
         </scene>
     </scenes>
     <resources>

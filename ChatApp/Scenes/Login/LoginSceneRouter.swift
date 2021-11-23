@@ -39,7 +39,8 @@ extension LoginSceneRouter: LoginSceneRouting {
         let sceneFactory = DefaultSceneFactory()
         sceneFactory.dashboardConfigurator = DefaultDashboardSceneConfigurator(sceneFactory: sceneFactory)
         let scene = sceneFactory.makeDashboardScene(coordinator: self.coordinator,user: user)
-        source?.navigationController?.pushViewController(scene, animated: true)
+        scene.modalPresentationStyle = .fullScreen
+        source?.present(scene, animated: true, completion: nil)
     }
     func showAddUserPage() {
         let sceneFactory = DefaultSceneFactory()

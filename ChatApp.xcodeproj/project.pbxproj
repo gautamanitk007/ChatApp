@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D23E492D274CB13600D60897 /* ContactScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4926274CB13600D60897 /* ContactScenePresenter.swift */; };
+		D23E492E274CB13600D60897 /* ContactSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4927274CB13600D60897 /* ContactSceneRouter.swift */; };
+		D23E492F274CB13600D60897 /* ContactSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4928274CB13600D60897 /* ContactSceneViewController.swift */; };
+		D23E4930274CB13600D60897 /* ContactSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4929274CB13600D60897 /* ContactSceneInteractor.swift */; };
+		D23E4942274CB17400D60897 /* FriendsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E493C274CB17400D60897 /* FriendsScenePresenter.swift */; };
+		D23E4943274CB17400D60897 /* FriendsSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E493D274CB17400D60897 /* FriendsSceneRouter.swift */; };
+		D23E4944274CB17400D60897 /* FriendsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E493E274CB17400D60897 /* FriendsSceneViewController.swift */; };
+		D23E4945274CB17400D60897 /* FriendsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E493F274CB17400D60897 /* FriendsSceneInteractor.swift */; };
+		D23E4954274CB19700D60897 /* ConversationScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E494E274CB19700D60897 /* ConversationScenePresenter.swift */; };
+		D23E4955274CB19700D60897 /* ConversationSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E494F274CB19700D60897 /* ConversationSceneRouter.swift */; };
+		D23E4956274CB19700D60897 /* ConversationSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4950274CB19700D60897 /* ConversationSceneViewController.swift */; };
+		D23E4957274CB19700D60897 /* ConversationSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4951274CB19700D60897 /* ConversationSceneInteractor.swift */; };
+		D23E495E274CECF800D60897 /* ConversationSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E495D274CECF800D60897 /* ConversationSceneConfigurator.swift */; };
+		D23E4963274CED0D00D60897 /* FriendsSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4962274CED0D00D60897 /* FriendsSceneConfigurator.swift */; };
+		D23E4968274CED2400D60897 /* ContactSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4967274CED2400D60897 /* ContactSceneConfigurator.swift */; };
+		D23E497B274D070E00D60897 /* GeneralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E497A274D070E00D60897 /* GeneralController.swift */; };
+		D23E4980274D0E8B00D60897 /* DashboardSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E497F274D0E8B00D60897 /* DashboardSceneRouter.swift */; };
 		D28FF1412748F8D7007B469B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28FF1402748F8D7007B469B /* AppDelegate.swift */; };
 		D28FF1432748F8D7007B469B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28FF1422748F8D7007B469B /* SceneDelegate.swift */; };
 		D28FF1482748F8D7007B469B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28FF1462748F8D7007B469B /* Main.storyboard */; };
@@ -62,6 +79,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D23E4926274CB13600D60897 /* ContactScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactScenePresenter.swift; sourceTree = "<group>"; };
+		D23E4927274CB13600D60897 /* ContactSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSceneRouter.swift; sourceTree = "<group>"; };
+		D23E4928274CB13600D60897 /* ContactSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSceneViewController.swift; sourceTree = "<group>"; };
+		D23E4929274CB13600D60897 /* ContactSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSceneInteractor.swift; sourceTree = "<group>"; };
+		D23E493C274CB17400D60897 /* FriendsScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsScenePresenter.swift; sourceTree = "<group>"; };
+		D23E493D274CB17400D60897 /* FriendsSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsSceneRouter.swift; sourceTree = "<group>"; };
+		D23E493E274CB17400D60897 /* FriendsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsSceneViewController.swift; sourceTree = "<group>"; };
+		D23E493F274CB17400D60897 /* FriendsSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsSceneInteractor.swift; sourceTree = "<group>"; };
+		D23E494E274CB19700D60897 /* ConversationScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationScenePresenter.swift; sourceTree = "<group>"; };
+		D23E494F274CB19700D60897 /* ConversationSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationSceneRouter.swift; sourceTree = "<group>"; };
+		D23E4950274CB19700D60897 /* ConversationSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationSceneViewController.swift; sourceTree = "<group>"; };
+		D23E4951274CB19700D60897 /* ConversationSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationSceneInteractor.swift; sourceTree = "<group>"; };
+		D23E495D274CECF800D60897 /* ConversationSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationSceneConfigurator.swift; sourceTree = "<group>"; };
+		D23E4962274CED0D00D60897 /* FriendsSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsSceneConfigurator.swift; sourceTree = "<group>"; };
+		D23E4967274CED2400D60897 /* ContactSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSceneConfigurator.swift; sourceTree = "<group>"; };
+		D23E497A274D070E00D60897 /* GeneralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralController.swift; sourceTree = "<group>"; };
+		D23E497F274D0E8B00D60897 /* DashboardSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSceneRouter.swift; sourceTree = "<group>"; };
 		D28FF13D2748F8D7007B469B /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28FF1402748F8D7007B469B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D28FF1422748F8D7007B469B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +164,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D23E4922274CAA9500D60897 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				D23E4926274CB13600D60897 /* ContactScenePresenter.swift */,
+				D23E4927274CB13600D60897 /* ContactSceneRouter.swift */,
+				D23E4928274CB13600D60897 /* ContactSceneViewController.swift */,
+				D23E4929274CB13600D60897 /* ContactSceneInteractor.swift */,
+				D23E4967274CED2400D60897 /* ContactSceneConfigurator.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		D23E4923274CAAA100D60897 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				D23E493C274CB17400D60897 /* FriendsScenePresenter.swift */,
+				D23E493D274CB17400D60897 /* FriendsSceneRouter.swift */,
+				D23E493E274CB17400D60897 /* FriendsSceneViewController.swift */,
+				D23E493F274CB17400D60897 /* FriendsSceneInteractor.swift */,
+				D23E4962274CED0D00D60897 /* FriendsSceneConfigurator.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		D23E4924274CB0CE00D60897 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				D23E494E274CB19700D60897 /* ConversationScenePresenter.swift */,
+				D23E494F274CB19700D60897 /* ConversationSceneRouter.swift */,
+				D23E4950274CB19700D60897 /* ConversationSceneViewController.swift */,
+				D23E4951274CB19700D60897 /* ConversationSceneInteractor.swift */,
+				D23E495D274CECF800D60897 /* ConversationSceneConfigurator.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
 		D28FF1342748F8D7007B469B = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +261,9 @@
 		D28FF1762748F8F7007B469B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D23E4924274CB0CE00D60897 /* Conversation */,
+				D23E4923274CAAA100D60897 /* Friends */,
+				D23E4922274CAA9500D60897 /* Contact */,
 				D28FF230274AADD9007B469B /* Dashboard */,
 				D28FF20B274AA0F1007B469B /* AddUser */,
 				D28FF1772748F8FF007B469B /* Login */,
@@ -225,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				D28FF1AB274A5008007B469B /* BaseViewController.swift */,
+				D23E497A274D070E00D60897 /* GeneralController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -293,6 +367,7 @@
 			children = (
 				D28FF231274AAE1E007B469B /* DashboardSceneViewController.swift */,
 				D28FF239274AAFD6007B469B /* DashboardSceneConfigurator.swift */,
+				D23E497F274D0E8B00D60897 /* DashboardSceneRouter.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -428,22 +503,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23E4980274D0E8B00D60897 /* DashboardSceneRouter.swift in Sources */,
 				D28FF1B8274A52A8007B469B /* Managed.swift in Sources */,
+				D23E492D274CB13600D60897 /* ContactScenePresenter.swift in Sources */,
+				D23E4942274CB17400D60897 /* FriendsScenePresenter.swift in Sources */,
+				D23E4963274CED0D00D60897 /* FriendsSceneConfigurator.swift in Sources */,
 				D28FF1832748FA42007B469B /* LoginSceneModel.swift in Sources */,
+				D23E497B274D070E00D60897 /* GeneralController.swift in Sources */,
 				D28FF216274AA119007B469B /* AddUserSceneViewController.swift in Sources */,
+				D23E492F274CB13600D60897 /* ContactSceneViewController.swift in Sources */,
+				D23E495E274CECF800D60897 /* ConversationSceneConfigurator.swift in Sources */,
 				D28FF1C5274A5303007B469B /* Coordinator.swift in Sources */,
+				D23E4957274CB19700D60897 /* ConversationSceneInteractor.swift in Sources */,
 				D28FF23A274AAFD6007B469B /* DashboardSceneConfigurator.swift in Sources */,
+				D23E4943274CB17400D60897 /* FriendsSceneRouter.swift in Sources */,
 				D28FF1A12748FB69007B469B /* RoundedButton.swift in Sources */,
+				D23E4955274CB19700D60897 /* ConversationSceneRouter.swift in Sources */,
 				D28FF19C2748FB50007B469B /* BindingTextField.swift in Sources */,
 				D28FF217274AA119007B469B /* AddUserSceneInteractor.swift in Sources */,
 				D28FF227274AA19F007B469B /* AddUserSceneConfigurator.swift in Sources */,
 				D28FF1412748F8D7007B469B /* AppDelegate.swift in Sources */,
+				D23E4954274CB19700D60897 /* ConversationScenePresenter.swift in Sources */,
+				D23E4944274CB17400D60897 /* FriendsSceneViewController.swift in Sources */,
 				D28FF17F2748FA42007B469B /* LoginSceneRouter.swift in Sources */,
 				D28FF232274AAE1E007B469B /* DashboardSceneViewController.swift in Sources */,
 				D28FF1AC274A5008007B469B /* BaseViewController.swift in Sources */,
+				D23E492E274CB13600D60897 /* ContactSceneRouter.swift in Sources */,
 				D28FF1DC274A540E007B469B /* User+CoreDataProperties.swift in Sources */,
 				D28FF215274AA119007B469B /* AddUserSceneRouter.swift in Sources */,
 				D28FF1DB274A540E007B469B /* User+CoreDataClass.swift in Sources */,
+				D23E4945274CB17400D60897 /* FriendsSceneInteractor.swift in Sources */,
 				D28FF1432748F8D7007B469B /* SceneDelegate.swift in Sources */,
 				D28FF1812748FA42007B469B /* LoginSceneInteractor.swift in Sources */,
 				D28FF1E1274A55D7007B469B /* NSManagedObjectContext+Extensions.swift in Sources */,
@@ -451,7 +540,10 @@
 				D28FF17E2748FA42007B469B /* LoginScenePresenter.swift in Sources */,
 				D28FF1C0274A52DD007B469B /* DataStack.swift in Sources */,
 				D28FF1E7274A56A9007B469B /* Utils.swift in Sources */,
+				D23E4968274CED2400D60897 /* ContactSceneConfigurator.swift in Sources */,
+				D23E4956274CB19700D60897 /* ConversationSceneViewController.swift in Sources */,
 				D28FF1FE274A5C80007B469B /* LoginSceneConfigurator.swift in Sources */,
+				D23E4930274CB13600D60897 /* ContactSceneInteractor.swift in Sources */,
 				D28FF1802748FA42007B469B /* LoginSceneViewController.swift in Sources */,
 				D28FF214274AA119007B469B /* AddUserScenePresenter.swift in Sources */,
 				D28FF1CB274A535A007B469B /* ChatApp.xcdatamodeld in Sources */,
