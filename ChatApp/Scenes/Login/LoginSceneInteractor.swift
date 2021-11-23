@@ -25,7 +25,7 @@ extension LoginSceneInteractor: LoginSceneInteractorInput {
 
     func startLogin(user userModel: UserModel) {
         if userModel.userId == nil || userModel.userId?.count == 0 {
-            self.presenter?.logingFailed(message: Utils.getLocalisedValue(key:"UserName_Empty"))
+            self.presenter?.logingFailed(message: Utils.getLocalisedValue(key:"UserID_Empty"))
             return
         }
         if userModel.password == nil || userModel.password?.count == 0 {

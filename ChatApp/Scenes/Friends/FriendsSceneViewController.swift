@@ -6,12 +6,22 @@
 
 
 import UIKit
-
+import CoreData
 final class FriendsSceneViewController: GeneralController {
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
-   
-  }
-  
+    var viewContext: NSManagedObjectContext!
+    var router: FriendsSceneRouting!
+    var user: User!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+    @objc override func logoutTapped(_ sender: Any) {
+        self.router.popToRootController()
+    }
+    
+    @objc override func addUserTapped(_ sender: Any) {
+        self.router.showAddUserPage()
+    }
 }

@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D23E492D274CB13600D60897 /* ContactScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4926274CB13600D60897 /* ContactScenePresenter.swift */; };
 		D23E492E274CB13600D60897 /* ContactSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4927274CB13600D60897 /* ContactSceneRouter.swift */; };
 		D23E492F274CB13600D60897 /* ContactSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4928274CB13600D60897 /* ContactSceneViewController.swift */; };
-		D23E4930274CB13600D60897 /* ContactSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4929274CB13600D60897 /* ContactSceneInteractor.swift */; };
 		D23E4942274CB17400D60897 /* FriendsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E493C274CB17400D60897 /* FriendsScenePresenter.swift */; };
 		D23E4943274CB17400D60897 /* FriendsSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E493D274CB17400D60897 /* FriendsSceneRouter.swift */; };
 		D23E4944274CB17400D60897 /* FriendsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E493E274CB17400D60897 /* FriendsSceneViewController.swift */; };
@@ -23,7 +21,10 @@
 		D23E4963274CED0D00D60897 /* FriendsSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4962274CED0D00D60897 /* FriendsSceneConfigurator.swift */; };
 		D23E4968274CED2400D60897 /* ContactSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4967274CED2400D60897 /* ContactSceneConfigurator.swift */; };
 		D23E497B274D070E00D60897 /* GeneralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E497A274D070E00D60897 /* GeneralController.swift */; };
-		D23E4980274D0E8B00D60897 /* DashboardSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E497F274D0E8B00D60897 /* DashboardSceneRouter.swift */; };
+		D23E4980274D0E8B00D60897 /* NavigationSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E497F274D0E8B00D60897 /* NavigationSceneRouter.swift */; };
+		D23E4993274D41FD00D60897 /* TableDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4992274D41FD00D60897 /* TableDatasource.swift */; };
+		D23E4998274D43ED00D60897 /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4997274D43ED00D60897 /* CommonCell.swift */; };
+		D23E499D274D487A00D60897 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E499C274D487A00D60897 /* Enums.swift */; };
 		D28FF1412748F8D7007B469B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28FF1402748F8D7007B469B /* AppDelegate.swift */; };
 		D28FF1432748F8D7007B469B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28FF1422748F8D7007B469B /* SceneDelegate.swift */; };
 		D28FF1482748F8D7007B469B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28FF1462748F8D7007B469B /* Main.storyboard */; };
@@ -79,10 +80,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D23E4926274CB13600D60897 /* ContactScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactScenePresenter.swift; sourceTree = "<group>"; };
 		D23E4927274CB13600D60897 /* ContactSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSceneRouter.swift; sourceTree = "<group>"; };
 		D23E4928274CB13600D60897 /* ContactSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSceneViewController.swift; sourceTree = "<group>"; };
-		D23E4929274CB13600D60897 /* ContactSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSceneInteractor.swift; sourceTree = "<group>"; };
 		D23E493C274CB17400D60897 /* FriendsScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsScenePresenter.swift; sourceTree = "<group>"; };
 		D23E493D274CB17400D60897 /* FriendsSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsSceneRouter.swift; sourceTree = "<group>"; };
 		D23E493E274CB17400D60897 /* FriendsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsSceneViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +94,10 @@
 		D23E4962274CED0D00D60897 /* FriendsSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsSceneConfigurator.swift; sourceTree = "<group>"; };
 		D23E4967274CED2400D60897 /* ContactSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSceneConfigurator.swift; sourceTree = "<group>"; };
 		D23E497A274D070E00D60897 /* GeneralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralController.swift; sourceTree = "<group>"; };
-		D23E497F274D0E8B00D60897 /* DashboardSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSceneRouter.swift; sourceTree = "<group>"; };
+		D23E497F274D0E8B00D60897 /* NavigationSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSceneRouter.swift; sourceTree = "<group>"; };
+		D23E4992274D41FD00D60897 /* TableDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDatasource.swift; sourceTree = "<group>"; };
+		D23E4997274D43ED00D60897 /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
+		D23E499C274D487A00D60897 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		D28FF13D2748F8D7007B469B /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28FF1402748F8D7007B469B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D28FF1422748F8D7007B469B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,10 +169,8 @@
 		D23E4922274CAA9500D60897 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
-				D23E4926274CB13600D60897 /* ContactScenePresenter.swift */,
 				D23E4927274CB13600D60897 /* ContactSceneRouter.swift */,
 				D23E4928274CB13600D60897 /* ContactSceneViewController.swift */,
-				D23E4929274CB13600D60897 /* ContactSceneInteractor.swift */,
 				D23E4967274CED2400D60897 /* ContactSceneConfigurator.swift */,
 			);
 			path = Contact;
@@ -290,6 +290,7 @@
 				D28FF19B2748FB50007B469B /* BindingTextField.swift */,
 				D28FF1A02748FB69007B469B /* RoundedButton.swift */,
 				D28FF1A52748FB8D007B469B /* RoundedView.swift */,
+				D23E4997274D43ED00D60897 /* CommonCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -346,6 +347,8 @@
 				D28FF1E6274A56A9007B469B /* Utils.swift */,
 				D28FF1EE274A56B8007B469B /* Extensions.swift */,
 				D28FF1F8274A5C43007B469B /* SceneFactory.swift */,
+				D23E4992274D41FD00D60897 /* TableDatasource.swift */,
+				D23E499C274D487A00D60897 /* Enums.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -367,7 +370,7 @@
 			children = (
 				D28FF231274AAE1E007B469B /* DashboardSceneViewController.swift */,
 				D28FF239274AAFD6007B469B /* DashboardSceneConfigurator.swift */,
-				D23E497F274D0E8B00D60897 /* DashboardSceneRouter.swift */,
+				D23E497F274D0E8B00D60897 /* NavigationSceneRouter.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -503,9 +506,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D23E4980274D0E8B00D60897 /* DashboardSceneRouter.swift in Sources */,
+				D23E4980274D0E8B00D60897 /* NavigationSceneRouter.swift in Sources */,
 				D28FF1B8274A52A8007B469B /* Managed.swift in Sources */,
-				D23E492D274CB13600D60897 /* ContactScenePresenter.swift in Sources */,
 				D23E4942274CB17400D60897 /* FriendsScenePresenter.swift in Sources */,
 				D23E4963274CED0D00D60897 /* FriendsSceneConfigurator.swift in Sources */,
 				D28FF1832748FA42007B469B /* LoginSceneModel.swift in Sources */,
@@ -521,11 +523,14 @@
 				D23E4955274CB19700D60897 /* ConversationSceneRouter.swift in Sources */,
 				D28FF19C2748FB50007B469B /* BindingTextField.swift in Sources */,
 				D28FF217274AA119007B469B /* AddUserSceneInteractor.swift in Sources */,
+				D23E4993274D41FD00D60897 /* TableDatasource.swift in Sources */,
 				D28FF227274AA19F007B469B /* AddUserSceneConfigurator.swift in Sources */,
+				D23E4998274D43ED00D60897 /* CommonCell.swift in Sources */,
 				D28FF1412748F8D7007B469B /* AppDelegate.swift in Sources */,
 				D23E4954274CB19700D60897 /* ConversationScenePresenter.swift in Sources */,
 				D23E4944274CB17400D60897 /* FriendsSceneViewController.swift in Sources */,
 				D28FF17F2748FA42007B469B /* LoginSceneRouter.swift in Sources */,
+				D23E499D274D487A00D60897 /* Enums.swift in Sources */,
 				D28FF232274AAE1E007B469B /* DashboardSceneViewController.swift in Sources */,
 				D28FF1AC274A5008007B469B /* BaseViewController.swift in Sources */,
 				D23E492E274CB13600D60897 /* ContactSceneRouter.swift in Sources */,
@@ -543,7 +548,6 @@
 				D23E4968274CED2400D60897 /* ContactSceneConfigurator.swift in Sources */,
 				D23E4956274CB19700D60897 /* ConversationSceneViewController.swift in Sources */,
 				D28FF1FE274A5C80007B469B /* LoginSceneConfigurator.swift in Sources */,
-				D23E4930274CB13600D60897 /* ContactSceneInteractor.swift in Sources */,
 				D28FF1802748FA42007B469B /* LoginSceneViewController.swift in Sources */,
 				D28FF214274AA119007B469B /* AddUserScenePresenter.swift in Sources */,
 				D28FF1CB274A535A007B469B /* ChatApp.xcdatamodeld in Sources */,

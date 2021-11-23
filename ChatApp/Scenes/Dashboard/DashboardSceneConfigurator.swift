@@ -22,16 +22,15 @@ final class DefaultDashboardSceneConfigurator: DashboardSceneConfigurator {
     @discardableResult
     func configured(_ vc: DashboardSceneViewController, coordinator:Coordinator, user: User) -> DashboardSceneViewController {
         sceneFactory.dashboardConfigurator = self
-        vc.userModel = user
-        
+
         let contactSceneFactory = DefaultSceneFactory()
         contactSceneFactory.contactConfigurator = DefaultContactSceneConfigurator(sceneFactory: contactSceneFactory)
-        let contactSceneVC = contactSceneFactory.makeContactScene(coordinator: coordinator)
+        let contactSceneVC = contactSceneFactory.makeContactScene(coordinator: coordinator,user: user)
         
        
         let friendsSceneFactory = DefaultSceneFactory()
         friendsSceneFactory.friendsConfigurator = DefaultFriendsSceneConfigurator(sceneFactory: friendsSceneFactory)
-        let friendsSceneVC = friendsSceneFactory.makeFriendsScene(coordinator: coordinator)
+        let friendsSceneVC = friendsSceneFactory.makeFriendsScene(coordinator: coordinator, user: user)
         
         let conactNavController = createNavController(for: contactSceneVC,
                                                       title: Utils.getLocalisedValue(key: "Contact"),
@@ -42,9 +41,6 @@ final class DefaultDashboardSceneConfigurator: DashboardSceneConfigurator {
                                                image: UIImage(named: "chat.png"))
         
         vc.viewControllers = [conactNavController, friendsNavController]
-        let router = DashboardSceneRouter(sceneFactory: sceneFactory)
-        router.source = vc
-        vc.router = router
         return vc
     }
 

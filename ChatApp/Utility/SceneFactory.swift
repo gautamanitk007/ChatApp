@@ -18,8 +18,8 @@ protocol SceneFactory {
     func makeLoginScene(coordinator: Coordinator) -> LoginSceneViewController
     func makeAddUserScene(coordinator: Coordinator) -> AddUserSceneViewController
     func makeDashboardScene(coordinator: Coordinator, user: User) -> DashboardSceneViewController
-    func makeContactScene(coordinator: Coordinator) -> ContactSceneViewController
-    func makeFriendsScene(coordinator: Coordinator) -> FriendsSceneViewController
+    func makeContactScene(coordinator: Coordinator, user:User) -> ContactSceneViewController
+    func makeFriendsScene(coordinator: Coordinator, user:User) -> FriendsSceneViewController
     func makeConversationScene(coordinator: Coordinator) -> ConversationSceneViewController
 }
 
@@ -44,14 +44,14 @@ final class DefaultSceneFactory: SceneFactory {
         return dashboardConfigurator.configured(dashboardVC, coordinator: coordinator, user: user)
     }
     
-    func makeContactScene(coordinator: Coordinator) -> ContactSceneViewController {
+    func makeContactScene(coordinator: Coordinator, user:User) -> ContactSceneViewController {
         let contactVC = self.getViewController(identifier: "ContactScene") as! ContactSceneViewController
-        return contactConfigurator.configured(contactVC, coordinator: coordinator)
+        return contactConfigurator.configured(contactVC, coordinator: coordinator, user: user)
     }
     
-    func makeFriendsScene(coordinator: Coordinator) -> FriendsSceneViewController {
+    func makeFriendsScene(coordinator: Coordinator, user:User) -> FriendsSceneViewController {
         let friendsVC = self.getViewController(identifier: "FriendScene") as! FriendsSceneViewController
-        return friendsConfigurator.configured(friendsVC, coordinator: coordinator)
+        return friendsConfigurator.configured(friendsVC, coordinator: coordinator, user:user)
     }
     
     func makeConversationScene(coordinator: Coordinator) -> ConversationSceneViewController {

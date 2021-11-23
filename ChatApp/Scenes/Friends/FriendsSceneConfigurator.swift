@@ -7,7 +7,7 @@
 
 import Foundation
 protocol FriendsSceneConfigurator {
-    func configured(_ vc: FriendsSceneViewController, coordinator:Coordinator) -> FriendsSceneViewController
+    func configured(_ vc: FriendsSceneViewController, coordinator:Coordinator, user:User) -> FriendsSceneViewController
 }
 
 final class DefaultFriendsSceneConfigurator: FriendsSceneConfigurator {
@@ -18,8 +18,13 @@ final class DefaultFriendsSceneConfigurator: FriendsSceneConfigurator {
     }
     
     @discardableResult
-    func configured(_ vc: FriendsSceneViewController, coordinator:Coordinator) -> FriendsSceneViewController{
+    func configured(_ vc: FriendsSceneViewController, coordinator:Coordinator, user:User) -> FriendsSceneViewController{
         sceneFactory.friendsConfigurator = self
+        let router = FriendsSceneRouter(sceneFactory: sceneFactory, coordinator: coordinator)
+        router.source = vc
+        vc.router = router
+        vc.user = user
+        vc.viewContext = coordinator.viewContext
         return vc
     }
 }
